@@ -82,5 +82,8 @@
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest/presets/typescript-and-babel"
   },
-  "cypress-cucumber-preprocessor": {"nonGlobalStepDefinitions": true}
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "tests/e2e/integration"
+  }
 }
