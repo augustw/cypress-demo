@@ -81,7 +81,7 @@ export default defineComponent({
       return (
         this.username.length > 0 &&
         this.username.length <= 10 &&
-        this.password.length >= 8
+        this.password === "rättlösen"
       );
     },
   },

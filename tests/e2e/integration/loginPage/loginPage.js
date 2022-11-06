@@ -9,7 +9,7 @@ const selectors = {
   rubrik: "[data-cy='login-page-rubrik']",
   inputUsername: "[data-cy='login-page-input-username']",
   inputPassword: "[data-cy='login-page-input-password']",
-  buttonLogin: "[data-cy='login-page-button-login']"
+  buttonLogin: "[data-cy='login-page-button-login']",
 };
 
 Givet("att sidan har öppnats", function () {
@@ -17,7 +17,6 @@ Givet("att sidan har öppnats", function () {
 });
 
 Givet("rubriken {string} visas", (rubrik) => {
-  cy.wait(500);
   cy.get(selectors.rubrik).should("have.text", rubrik);
 });
 
@@ -37,4 +36,8 @@ Så("dirigeras användaren till startsidan", () => {
   cy.url().then((url) => {
     expect(url).to.include("/startsida");
   });
+});
+
+Så("är knappen Logga in inaktiverad", () => {
+  cy.get(selectors.buttonLogin).should("be.disabled");
 });
