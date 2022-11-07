@@ -3,7 +3,9 @@
     <v-col class="py-10 d-flex justify-center" md="12">
       <v-card color="basil">
         <v-card-title class="text-center justify-center py-6">
-          <h1 class="font-weight-bold text-h2 text-basil">{{ rubrik }}</h1>
+          <h1 class="font-weight-bold text-h2 text-basil" data-cy="rubrik">
+            {{ rubrik }}
+          </h1>
         </v-card-title>
         <!-- Tabs -->
         <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
