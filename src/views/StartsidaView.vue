@@ -3,14 +3,22 @@
     <v-col class="py-10 d-flex justify-center" md="12">
       <v-card color="basil">
         <v-card-title class="text-center justify-center py-6">
-          <h1 class="font-weight-bold text-h2 text-basil" data-cy="rubrik">
+          <h1
+            class="font-weight-bold text-h2 text-basil"
+            data-cy="startsida-rubrik"
+          >
             {{ rubrik }}
           </h1>
         </v-card-title>
         <!-- Tabs -->
-        <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
-          <v-tab v-for="item in items" :key="item" :value="item">
-            {{ item }}
+        <v-tabs v-model="tab" bg-color="transparent" color="basil" md="12" grow>
+          <v-tab
+            v-for="(item, index) in items"
+            :key="item"
+            :value="item"
+            class="tab-width"
+          >
+            <span :id="'startsida-tab-' + index">{{ item }}</span>
           </v-tab>
         </v-tabs>
 
@@ -22,12 +30,14 @@
               v-on:color-picked-body="onColorPickedBody"
               v-on:color-picked-main="onColorPickedMain"
               v-on:rubrik-picked="onRubrikPicked"
+              data-cy="startsida-settings-component"
             />
             <overview-component
               v-else
               :rubrikIn="rubrik"
               :colorBodyIn="bodyColor"
               :colorMainIn="mainColor"
+              data-cy="startsida-overview-component"
             />
           </v-window-item>
         </v-window>

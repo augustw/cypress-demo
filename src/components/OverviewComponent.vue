@@ -1,23 +1,38 @@
 <template>
   <v-card color="basil" flat>
     <v-row>
-      <v-col class="pa-10">
-        <p class="mb-2 font-weight-bold">Bakgrundsfärg body</p>
-        <v-card :color="colorBody" class="color-sample" elevation="5">{{
-          colorBody
-        }}</v-card>
+      <v-col class="pa-10" md="6">
+        <p class="mb-2 font-weight-bold" data-cy="overview-p-background-body">
+          Färg body
+        </p>
+        <v-card
+          :color="colorBody"
+          class="color-sample"
+          elevation="5"
+          data-cy="overview-color-sample-body"
+          >{{ colorBody }}</v-card
+        >
       </v-col>
-      <v-col class="pa-10">
-        <p class="mb-2 font-weight-bold">Bakgrundsfärg main</p>
-        <v-card :color="colorMain" class="color-sample" elevation="5">{{
-          colorMain
-        }}</v-card>
+      <v-col class="pa-10" md="6">
+        <p class="mb-2 font-weight-bold">Färg main</p>
+        <v-card
+          :color="colorMain"
+          class="color-sample"
+          elevation="5"
+          data-cy="overview-color-sample-main"
+          >{{ colorMain }}</v-card
+        >
       </v-col>
     </v-row>
     <v-row>
       <v-col class="pa-10">
-        <p class="font-weight-bold">Rubrik</p>
-        <h2 class="font-white font-weight-bold">{{ rubrik }}</h2>
+        <p class="font-weight-bold" data-cy="overview-p-rubrik">Rubrik</p>
+        <h2
+          class="font-white font-weight-bold"
+          data-cy="overview-output-rubrik"
+        >
+          {{ rubrik }}
+        </h2>
       </v-col>
     </v-row>
   </v-card>
