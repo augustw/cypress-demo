@@ -20,7 +20,7 @@ Förvisso ingen ovanlig approach, men det kan utnyttjas mycket mer i webbapplika
 **Och** rubriken "Logga in" visas<br>
 **När** användaren anger "august.wande" som användarnamn<br>
 **Och** användaren anger "rättlösen" som lösenord<br>
-**Så** är knappen Logga in inaktiverad<br><br>
+**Så** är knappen Logga in inaktiverad<br>
 
 **Scenario**: Inloggningen går inte att genomföra när lösenordet är felaktigt<br>
 **Givet** att sidan har öppnats<br>
