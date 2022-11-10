@@ -68,3 +68,8 @@ Förvisso ingen ovanlig approach, men det kan utnyttjas mycket mer i webbapplika
 
 **Felutskrifter i Cypress-GUIt**
 ![Exempel på testfall](./docs/fel.png)
+
+
+## Frågor eller reflektioner? 
+
+Kontakta mig :)
