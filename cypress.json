@@ -1,4 +1,5 @@
 {
   "pluginsFile": "tests/cypress/plugins/index.js",
-  "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "projectId": "r68fkq"
 }
