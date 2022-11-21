@@ -56,7 +56,7 @@ Förvisso ingen ovanlig approach, men det kan utnyttjas mycket mer i webbapplika
 # Cypress
 
 <ul>
-    <li>Tillhandahåller GUI som kan användas lokalt vid tets. Går även att köra via cmd.</li>
+    <li>Tillhandahåller GUI som kan användas lokalt vid test. Går även att köra via cmd.</li>
     <li>Cypress ger otroligt tydliga loggar vilket underlättar felsökning även för den obevandrade testkodaren. Se illustration nedan.</li>
     <li>Möjlighet till screenshots och videos för att visualisera fel som en del i felsökning och testrapportering.</li>
     <li>Kan användas i CI-pipelines</li>
@@ -72,4 +72,4 @@ Förvisso ingen ovanlig approach, men det kan utnyttjas mycket mer i webbapplika
 
 ## Frågor eller reflektioner? 
 
-Kontakta mig :)
+Hör av dig!
